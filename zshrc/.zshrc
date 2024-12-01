@@ -62,3 +62,6 @@ alias cp="cp -i"                                                # Confirm before
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias b='brightnessctl'                                            # Show sizes in MB
+
+# Initialize zoxide
+eval "$(zoxide init zsh)"
