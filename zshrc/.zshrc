@@ -61,7 +61,8 @@ alias ccat="/usr/bin/cat"
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
-alias b='brightnessctl'                                            # Show sizes in MB
+alias b='brightnessctl'                                         # Show sizes in MB
+alias wallpaper='function _wallpaper() { hyprctl hyprpaper preload "$1"; hyprctl hyprpaper wallpaper ",$1"; }; _wallpaper'
 
 # Initialize zoxide
 eval "$(zoxide init zsh)"
