@@ -47,12 +47,11 @@ fi
 # End of lines added by compinstall
 
 export EDITOR=nvim
-export VISUAL=nvim
 export PATH=$HOME/.config/rofi/scripts:$PATH
 [[ $- != *i* ]] && return
 
 alias vim="$EDITOR"
-alias pacman="sudo pacman"
+alias pacman="sudo pacman --color=auto"
 alias yay="yay --color=auto"
 alias grep="grep --color=auto"
 alias ls="ls -lhA --group-directories-first --color=auto"
