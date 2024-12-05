@@ -54,7 +54,7 @@ alias vim="$EDITOR"
 alias pacman="sudo pacman --color=auto"
 alias yay="yay --color=auto"
 alias grep="grep --color=auto"
-alias ls="ls -lhA --group-directories-first --color=auto"
+alias ls="exa -lhA --group-directories-first --color=auto"
 alias cat="bat"
 alias ccat="/usr/bin/cat"
 alias cp="cp -i"                                                # Confirm before overwriting something
