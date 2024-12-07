@@ -30,7 +30,6 @@ window#waybar {
     margin-right: 10px;    
 }
 
-#battery,
 #pulseaudio,
 #backlight,
 
@@ -50,8 +49,18 @@ window#waybar {
 
 #pulseaudio {
     color: @blue; /* color5 */
+    background-color: @crust; /* background */
+    padding: 0 15px 0 15px;
 }
 
 #backlight {
     color: @flamingo; /* color5 */
+    background-color: @crust; /* background */
+    padding: 0 15px 0 15px;
+}
+
+#battery {
+    color: @green; /* color2 */
+    background-color: @crust; /* background */
+    padding: 0 15px 0 15px;
 }
