@@ -1,3 +1,8 @@
+add_newline = false
+
+[line_break]
+disabled = true
+
 # "$schema" = 'https://starship.rs/config-schema.json'
 #
 # format = """
@@ -176,12 +181,10 @@
 # time_format = "%R"
 # style = "bg:peach"
 # format = '[[  $time ](fg:mantle bg:purple)]($style)'
-
-add_newline = false
-
-[line_break]
-disabled = true
-
+#
+# [line_break]
+# disabled = false
+#
 # [character]
 # disabled = false
 # success_symbol = '[](bold fg:green)'
