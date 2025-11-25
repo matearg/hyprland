@@ -50,6 +50,7 @@ export EDITOR=nvim
 export PATH=$HOME/.config/rofi/scripts:$PATH
 [[ $- != *i* ]] && return
 
+# alias vim="NVIM_APPNAME=nvim-custom $EDITOR"
 alias vim="$EDITOR"
 alias pacman="sudo pacman --color=auto"
 alias yay="yay --color=auto"
@@ -65,3 +66,18 @@ alias wallpaper='function _wallpaper() { hyprctl hyprpaper preload "$1"; hyprctl
 
 # Initialize zoxide
 eval "$(zoxide init zsh)"
+
+# Created by `pipx` on 2025-08-21 03:02:51
+export PATH="$PATH:/home/mateo/.local/bin"
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+if command -v fzf &> /dev/null; then
+  if [[ -f /usr/share/fzf/completion.zsh ]]; then
+    source /usr/share/fzf/completion.zsh
+  fi
+  if [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
+    source /usr/share/fzf/key-bindings.zsh
+  fi
+fi
