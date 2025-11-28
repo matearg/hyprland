@@ -46,14 +46,12 @@ fi
 
 # End of lines added by compinstall
 
-export EDITOR=nvim
+export EDITOR="NVIM_APPNAME=nvim-custom nvim"
 export PATH=$HOME/.config/rofi/scripts:$PATH
 [[ $- != *i* ]] && return
 
 # alias vim="NVIM_APPNAME=nvim-custom $EDITOR"
 alias vim="$EDITOR"
-alias pacman="sudo pacman --color=auto"
-alias yay="yay --color=auto"
 alias grep="grep --color=auto"
 alias ls="exa -lhA --group-directories-first --color=auto --icons"
 alias cat="bat"
@@ -61,7 +59,6 @@ alias ccat="/usr/bin/cat"
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
-alias b='brightnessctl'                                         # Show sizes in MB
 alias wallpaper='function _wallpaper() { hyprctl hyprpaper preload "$1"; hyprctl hyprpaper wallpaper ",$1"; }; _wallpaper'
 
 # Initialize zoxide
